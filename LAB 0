@@ -1,5 +1,6 @@
 #LAB EXPERIMENT 0 :- WRITE A PYTHON PROGRAM TO PERFORM THE ARITHMATIC OPERATIONS
 
+#ARITHMATIC OPERATION
 x=int(input("ENTER VALUE OF X :"))
 y=int(input("ENTER VALUE OF Y :"))
 print("SUM OF NUMBER :-",x+y)
@@ -7,4 +8,29 @@ print("DIFFERENCE OF NUMBER :-",x-y)
 print("MULTIPLICATION OF NUMBER :-",x*y)
 print("DIVISION OF NUMBER :-",x/y)
 
+#LOGICAL OPERATION
+if(x>y):
+     print("X BADA HAI ")
+if(x<y):
+     print("Y BADA HAI ")
 
+print("REMAINDER :-",x%y)
+
+if(x==y):
+     print("DONO EQUAL HAI")
+if(x!=y):
+     print("DONO EQUAL NAHI HAI")
+print("LOGICAL AND IS :-",x&y)
+print("LOGICAL OR IS :-",x|y)
+print("LOGICAL XOR IS :-",x^y)
+
+#FIBONACCI SERIES
+temp=int(input("ENTER UPTO WHERE YOU WANT THE SERIES TO BE "))
+ini=0;
+nxt=1;
+print("0 1",end=" ")
+for x in range(0,temp-2):
+     pres=ini+nxt
+     print(pres,end=" ")
+     ini=nxt
+     nxt=pres
