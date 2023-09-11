@@ -1,0 +1,43 @@
+#AIM1 :- TP UNDERSTAND VARIABLE AND OPERATORS
+
+#EULIAN DISTANCE
+import numpy as np
+
+x1=int(input("ENTER FIRST X :"))
+y1=int(input("ENTER FIRST Y :"))
+x2=int(input("ENTER SECOND X :"))
+y2=int(input("ENTER SECOND Y :"))
+dis=np.sqrt((x1-x2)^2+(y1-y2)^2)
+print("EULIAN DISTANCE :- ",dis)
+
+#MANHATTAN DISTANCE
+
+x1=int(input("ENTER FIRST X :"))
+y1=int(input("ENTER FIRST Y :"))
+x2=int(input("ENTER SECOND X :"))
+y2=int(input("ENTER SECOND Y :"))
+xabs=np.fabs(x2-x1)
+yabs=np.fabs(y2-y1)
+print("MANHATTAN DISTANCE :- ",xabs+yabs)
+
+#STUDENT RECORD
+
+name=input("ENTER YOUR NAME :- ")
+rollno=input("ENTER YOUR ROLL NUMBER :- ")
+branch=input("ENTER YOUR BRANCH :- ")
+print("-----------------------------------------ENTER YOUR MARKS IN 3 SUBJECT OUT OF 100--------------------------------------------")
+math=int(input("ENTER YOUR MARKS IN MATHS :- "))
+phy=int(input("ENTER YOUR MARKS IN PHYSICS  :- "))
+chem=int(input("ENTER YOUR MARKS IN CHEMISTRY :- "))
+total=math+phy+chem
+print("STUDENT NAME :- ",name)
+print("STUDEN ROLL NUMBER :- ",rollno)
+print("STUDENT BRANCH :- ",branch)
+print("TOTAL MARKS OUT OF 300 :- ",total)
+print("PERCENTAGE WITHOUT INCENTIVE :- ",(total/3))
+print("PERCENTAGE WITH 0.5% OVERALL INCENTIVES :- ",((total/3)+0.5))
+math=(math+(math/200))
+phy=(phy+(phy/200))
+chem=(chem+(chem/200))
+total=phy+chem+math
+print("PERCENTAGE WITH 0.5% INDIVIDUAL SUBJECT INCENTIVE :-",total/3)
